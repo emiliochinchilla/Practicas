@@ -1,0 +1,19 @@
+
+package holamundo;
+
+public class HolaMundo {
+
+
+    public static void main(String[] args) {
+        // Aquí comienza mi primer programa
+        // Hecho por: Emilio Chinchilla
+        String nombre;
+        String correo = "emilio.chinchilla@ulatina.net";
+        int cantidad;
+        nombre = "Emilio";
+        cantidad = 120;
+        System.out.println("Hola "+nombre+". \nBienvenido a JAVA, la cantidad de alumnos es "+cantidad);
+        asda
+    }
+    
+}
