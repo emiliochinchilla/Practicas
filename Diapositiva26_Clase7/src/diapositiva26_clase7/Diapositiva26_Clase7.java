@@ -1,20 +1,45 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package diapositiva26_clase7;
 
-/**
- *
- * @author Familia
- */
+import javax.swing.JOptionPane;
+
+
 public class Diapositiva26_Clase7 {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        // TODO code application logic here
+        int antiguedad, horaSemana, precio;
+        int bruto;
+        int neto = 0;
+        
+        antiguedad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de anos laborados:"));
+        horaSemana = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la cantidad de horas laboradas por semana:"));
+        precio = Integer.parseInt(JOptionPane.showInputDialog("Ingrese el precio que se le paga por hora:"));
+        
+        bruto = (horaSemana)*4*precio;
+        
+        if (antiguedad>10){
+            bruto = (int) (bruto*1.2);
+        }
+        
+        else {
+            
+        }
+        
+        
+        if (bruto>1000){
+                neto = (int) (bruto*0.9);
+                JOptionPane.showMessageDialog(null, "Su salario neto es "+neto);
+
+        }else if (bruto>2000){
+                neto = (int) (bruto*0.85);
+                JOptionPane.showMessageDialog(null, "Su salario neto es "+neto);
+                
+        }
+        else {
+            JOptionPane.showMessageDialog(null, "Su salario neto es "+bruto);
+                
+        }
     }
 
 }
